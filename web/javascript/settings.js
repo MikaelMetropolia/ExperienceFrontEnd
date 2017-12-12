@@ -1,7 +1,5 @@
 'use strict';
 
-// if there is no id value stored in the cookie, then reload the specified page
-noCookieIdLoadPage("LogInPage.html");
 
 const addPhotoButton = document.querySelector('#add-photo');
 const profileImg = document.querySelector('#profile-img');

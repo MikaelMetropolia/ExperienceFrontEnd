@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
     <link rel="stylesheet" href="style2.css" type="text/css">
-    <title>Settings</title>
+    <title>Intermediate compositions</title>
+
 </head>
 <body>
 <nav>
@@ -26,11 +27,13 @@
                 <li><a id="sub-menu-button-2"><i class="right" id="right2"></i> Compositions </a>
                     <ul class="start-sub-menu" id="start-sub-menu-2">
                         <li class="sub-menu-1"><a href="Beginner.html"> - Beginner</a></li>
+                        <li class="sub-menu-1"><a href="Intermediate.html"> - Intermediate</a></li>
+                        <li class="sub-menu-1"><a href="Advanced.html"> - Advanced</a></li>
                     </ul>
                 </li>
                 <li id="profile-link"><a href="profile.html"> My Profile </a></li>
-                <li id="user-list"><a href="userlist.html"> Users </a></li>
-                <li id="admin-panel"><a href="adminpanel.html"> Admin panel </a></li>
+                <li id="admin-panel"><a href="profile.html"> Admin panel </a></li>
+                <li><a href="PlayComp.html"> Play </a></li>
             </ul>
         </div>
         <header class="banner"><a href="index.html"> <img src="resources/LOGO.png" alt="logo" class="logo" width="425" height="50"> </a></header>
@@ -41,45 +44,29 @@
     </div>
 </nav>
 
-<main id="profile-wrapper">
-    <section id="left-side">
-        <h1 id="username-display"> Test User</h1>
-        <img src="resources/default.jpg" id="profile-img">   <br>  <br>  <br>
-        <label class="fileContainer" id="testi">
-            Update photo
-            <input name="profile" type="file" class="upload-file" id="add-photo" accept="image/*">
-        </label>  <br>
-        <article id="remove-photo-text"> <p id="remove-photo"> Delete picture</p> </article>
-    </section>
-    <section id="right-side-settings-wrapper">
-        <div id="right-side-settings-header">
-           <h1> Settings</h1>
-        </div>
-        <div id="right-side-settings">
-            <form id="settingsForm" method="post">
-                <input class="inputfield" name="newEmail" placeholder="Email"> <br>
-                <input class="inputfield" id="username-input" name="newAlias" placeholder="Username"> <br>
-                <input class="inputfield" type="password" name="newPassword" placeholder="Password"> <br>
-                <input class="inputfield" type="password" name="newPassword2" placeholder="Confirm password"> <br>
-                <input class="popup" type="submit" value="Save" id="save-settings">
-                <input type="submit" value="Cancel" id="cancel-settings" onClick="window.location = 'profile.html';">
-            </form>
-        </div>
-    </section>
-</main>
-<div class="pop-up">
-    <div class="are-you-sure"> Are you sure? </div>
-    <div class="confirm-box">
-        <div class="confirm">
-            <input class="" type="submit" value="Yes">
-        </div>
-        <div class="confirm">
-            <input class="" type="submit" value="No">
-        </div>
-    </div>
+
+<div id="title-wrapper">
+    <div class="title-comp"><h1  id="level-2-title"> Advanced </h1>  </div>
 </div>
-<script src="javascript/info.js"></script>
-<script src="javascript/settings.js"></script>
+
+
+<div id = "image-wrapper">
+    <main class="composition">
+        <div class="composition-title-level-2">Anh. 115 Minuet <br> J.S.Bach </div>
+        <div class ="composition-image"><img src="resources/play-button.PNG"></div>
+        <div class ="composition-stats">
+            <div class="stat-img"><img src="resources/thumb-white.png" id="thumb-button"></div>
+            <div class="stat-text"><p id="like-count">5</p> </div>
+            <div class="stat-img"><img src="resources/favorite-white.png" id="favorite-button"> </div>
+            <div class="stat-text"><p id="favorite-count">0</p> </div>
+            <div class="stat-img"><img src="resources/comment.png"></div>
+            <div class="stat-text"><p id="comment-count"> 0 </p></div>
+        </div>
+    </main>
+</div>
+
+<button type="button" id="test-button-level-1">Click Me!</button>
+<script src="javascript/beginner.js"></script>
 <script src="javascript/navbar.js"> </script>
 </body>
 </html>

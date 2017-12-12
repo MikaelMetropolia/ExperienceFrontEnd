@@ -7,7 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style2.css" type="text/css">
-    <title>Settings</title>
+    <title>Blank test page</title>
 </head>
 <body>
 <nav>
@@ -41,45 +41,47 @@
     </div>
 </nav>
 
-<main id="profile-wrapper">
-    <section id="left-side">
-        <h1 id="username-display"> Test User</h1>
-        <img src="resources/default.jpg" id="profile-img">   <br>  <br>  <br>
-        <label class="fileContainer" id="testi">
-            Update photo
-            <input name="profile" type="file" class="upload-file" id="add-photo" accept="image/*">
-        </label>  <br>
-        <article id="remove-photo-text"> <p id="remove-photo"> Delete picture</p> </article>
-    </section>
-    <section id="right-side-settings-wrapper">
-        <div id="right-side-settings-header">
-           <h1> Settings</h1>
-        </div>
-        <div id="right-side-settings">
-            <form id="settingsForm" method="post">
-                <input class="inputfield" name="newEmail" placeholder="Email"> <br>
-                <input class="inputfield" id="username-input" name="newAlias" placeholder="Username"> <br>
-                <input class="inputfield" type="password" name="newPassword" placeholder="Password"> <br>
-                <input class="inputfield" type="password" name="newPassword2" placeholder="Confirm password"> <br>
-                <input class="popup" type="submit" value="Save" id="save-settings">
-                <input type="submit" value="Cancel" id="cancel-settings" onClick="window.location = 'profile.html';">
-            </form>
-        </div>
-    </section>
-</main>
-<div class="pop-up">
-    <div class="are-you-sure"> Are you sure? </div>
-    <div class="confirm-box">
-        <div class="confirm">
-            <input class="" type="submit" value="Yes">
-        </div>
-        <div class="confirm">
-            <input class="" type="submit" value="No">
-        </div>
+
+<main id="comp-wrapper">
+    <div class="composition-title"><h1>Composition title here!</h1>
     </div>
-</div>
-<script src="javascript/info.js"></script>
-<script src="javascript/settings.js"></script>
+    <div class="composition-youtube">
+        <iframe src="https://www.youtube.com/embed/IUzNSXXrDis" frameBorder="0">
+        </iframe>
+    </div>
+    <div class="composition-sheet">
+        <img src="resources/sheet.jpg">
+    </div>
+    <div class="composition-stats-big">
+        <div id="author-box" class="text-stat-wrapper"><p>Author: J.S.Bach</p> </div>
+        <div id="duration-box" class="text-stat-wrapper"><p>Duration: 1:39</p></div>
+        <div id="pages-box" class="text-stat-wrapper"><p>Level: Beginner</p></div>
+        <div id="level-box" class="text-stat-wrapper"><p>Pages: 1</p></div>
+        <div id="space-maker"></div>
+        <div class="stat-img2"><img src="resources/thumb-white.png" id="thumb-button"></div>
+        <div class="stat-text2"><p id="like-count">6</p> </div>
+        <div class="stat-img2" id="favorite-icon"><img src="resources/favorite-white.png" id="favorite-button"> </div>
+        <div class="stat-text2"><p id="favorite-count">4</p> </div>
+        <div class="stat-img2"><img src="resources/comment.png"></div>
+        <div class="stat-text2"><p id="comment-count">0</p></div>
+    </div>
+    <div class="comment-box" id="comment-feed">
+        <div class="title" id="title-box"><h1>Comments: </h1></div>
+    </div>
+    <div class="leave-comment">
+        <div class="leave-comment-title">
+            <h1>Leave a comment: <br> </h1>
+            <textarea class="enter-comment" id="comment-field"></textarea>
+            <input type="submit" value="Comment" id="comment-button">
+        </div>
+
+    </div>
+</main>
+
+
+
+
 <script src="javascript/navbar.js"> </script>
+<script src="javascript/playComp.js"> </script>
 </body>
 </html>

@@ -1,8 +1,5 @@
 'use strict';
 
-if (document.cookie.length === 0) {
-    window.location.href = "LogInPage.html";
-}
 
 
 const profileTitleElement = document.querySelector('#profileTitle');

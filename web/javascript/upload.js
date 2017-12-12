@@ -1,12 +1,6 @@
 'use strict';
 const submitButton = document.getElementById("submitBtn");
 
-const cook = readCookies();
-if (!cook.includes("id=")) {
-
-    window.location.href = "LogInPage.html";
-}
-
 let title;
 let author;
 let length;

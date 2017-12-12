@@ -141,7 +141,7 @@ body {
     height: 70%;
     margin: 15px 10px 10px 10px;
     cursor: pointer;
-    border: 2px solid #ffd700;
+    border: 2px solid #F0F0F0;
 }
 
 
@@ -328,21 +328,6 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-#loginName {
-    position: relative;
-    font-family: 'Tangerine', serif;
-    color: #000;
-    font-size: 30px;
-    width: 50%;
-    height: 50px;
-    padding: 12px 20px;
-    margin: 10px 0;
-    display: inline-block;
-    border: transparent;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background: rgba(255, 255, 0, 0.2) !important;
-}
 
 .signup input[type=submit],
 .login input[type=submit] {

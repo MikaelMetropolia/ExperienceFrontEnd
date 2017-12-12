@@ -13,8 +13,8 @@ testButton.addEventListener('click', () => {
 const addUser = () => {
 console.log("working");
     infoElement.innerHTML += `<div class="user-information-bar">
-                                  <div class="info-bar"><img src="resources/pepe.png"></div>
-                                  <div class="info-bar-name"><p>420PEP3TH3FR0G666</p></div>
+                                  <div class="info-bar"><img src="resources/default.jpg"></div>
+                                  <div class="info-bar-name"><p>Test User</p></div>
                                   <div class="info-bar"><p>754</p></div>
                                   <div class="info-bar"><p>0</p></div>
                                   <div class="info-bar-button"><p>Grant</p></div>
